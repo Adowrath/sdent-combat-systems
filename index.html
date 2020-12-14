@@ -16,8 +16,170 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h3>Battle Systems in Games</h3>
+					<small>David Roth, Cyrill Brunner</small>
+				</section>
+				<section>
+					<h4>Overview</h4>
+					<ul>
+						<li class="fragment">Realtime
+						<li class="fragment">Turn-based
+						<li class="fragment">Mixed type
+					</ul>
+				</section>
+				<section>
+					<h4>Realtime battle systems</h4>
+					<section>
+						<h5>Unrestricted</h5>
+						Free movement<br>
+						Free attack flow<br>
+						<span class="fragment">
+							Pausable vs. non-pausable
+						</span>
+					</section>
+					<section>
+						<img src="DevilMayCry.jpg">
+					</section>
+					<section>
+						<img src="KingdomHearts3.jpg">
+					</section>
+					<section>
+						<img src="DeadCells.png">
+					</section>
+					<section>
+						<img src="DarkSouls.png">
+					</section>
+					<section>
+						<img src="CallOfDuty.png">
+					</section>
+					<section>
+						<h5>Special type</h5>
+						<h5>Linear Motion Battle System (LMBS)</h5>
+					</section>
+					<section>
+						<img src="TalesOfXillia.png">
+					</section>
+					<section>
+						<ul>
+							<li class="fragment">Enhanced LMBS</li>
+							<li class="fragment">Progressive LMBS</li>
+							<li class="fragment">Petit LMBS (Turnbased)</li>
+							<li class="fragment">Aggressive LMBS</li>
+							<li class="fragment">Condensed LMBS</li>
+
+							<li class="fragment">Trust & Tactical LMBS</li>
+							<li class="fragment">Multi-Line LMBS (1st 3D)</li>
+							<li class="fragment">3-Line LMBS</li>
+							<li class="fragment">Online LMBS</li>
+							<li class="fragment">Crossover LMBS</li>
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li class="fragment">Flex Range LMBS</li>
+							<li class="fragment">3-on-3 LMBS</li>
+							<li class="fragment">Aerial Linear LMBS</li>
+							<li class="fragment">Dimension Stride LMBS</li>
+							<li class="fragment">Flex Range Element Enhanced LMBS</li>
+
+							<li class="fragment">Evolved Flex Range LMBS</li>
+							<li class="fragment">Combination Aerial Linear LMBS</li>
+							<li class="fragment">Style Shift LMBS</li>
+							<li class="fragment">Dual Raid LMBS</li>
+							<li class="fragment">Cross Dual Raid LMBS</li>
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li class="fragment">Fusionic Chain LMBS</li>
+							<li class="fragment">Liberation LMBS</li>
+							<li class="fragment">Tales of Arise - ??? LMBS</li>
+						</ul>
+					</section>
+					<section>
+						<h5>Beurteilung</h5>
+						<ul>
+							<li class="fragment">+ Established</li>
+							<li class="fragment">+ High-energy</li>
+							<li class="fragment">- May be complex to implement</li>
+							<li class="fragment">- Difficult to make unique</li>
+							<li class="fragment">- Bug-prone</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h4>Turn-based battle systems</h4>
+						Discrete moves
+					</section>
+					<section>
+						<h4>Simple Alternating</h4>
+						<img src="Pokemon.png">
+					</section>
+					<section>
+						<h4>Card-based</h4>
+						<img src="SlayTheSpire.jpg">
+					</section>
+					<section>
+						<h4>ATB</h4>
+						<img src="ChildOfLight.jpg">
+					</section>
+					<section>
+						<h4>ATB</h4>
+						<img src="FinalFantasy7.jpg">
+					</section>
+					<section>
+						<h4>Plan out turn</h4>
+						<img src="OperationAbyss.jpg">
+					</section>
+					<section>
+						<h4>Tactical</h4>
+						Often control multiple units<br>
+						<ul>
+							<li>Permaloss?
+							<li>Special Win conditions
+						</ul>
+					</section>
+					<section>
+						<img src="Disgaea5.jpg">
+					</section>
+					<section>
+						<img src="IntoTheBreach.jpg">
+					</section>
+					<section>
+						<img src="ValkyriaChronicles.jpg">
+					</section>
+					<section>
+						<h4>Strategic</h4>
+						Distinction blurry
+					</section>
+					<section>
+						<h4>I don't know</h4>
+						<img src="Civ.jpg">
+					</section>
+					<section>
+						<ul>
+							<li>+ Limitless potential
+							<li>+ Vast depths possible
+							<li>- Can feel out-of-place
+							<li>- Complexity for AI
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h4>Mixed type</h4>
+					</section>
+					<section>
+						<h5>Realtime ATB</h5>
+						<img src="FinalFantasy13.jpg">
+					</section>
+					<section>
+						<h5>Realtime + Pause & Plan</h5>
+						<img src="Transistor.png">
+					</section>
+				</section>
 			</div>
 		</div>
 
@@ -30,6 +192,9 @@
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
 				hash: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/

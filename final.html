@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h3>Deep Dark Dungeon Depths Deluxe</h3>
+					<small>David Roth, Cyrill Brunner</small>
+				</section>
+				<section>
+					<h4>Overview</h4>
+					<ul>
+						<li class="fragment">Vision
+						<li class="fragment">Schwerpunkte
+					</ul>
+				</section>
+				<section>
+					<h4>Vision</h4>
+					<section>
+						<h3>Story</h3>
+						<ul>
+							<li>Kleine Gruppe an Freunden
+							<li class="fragment">Beginn in 0D &rArr; 1D &rArr; ... 3D
+							<li class="fragment">Erster Kampf nach Tutorialgebiet, 3D
+							<li class="fragment">Wer hat uns eingeschlossen?
+							<li class="fragment">Später verbundene Welt, Reisen über 4./5. "Achse"
+							<li class="fragment"><i>Humor</i>
+						</ul>
+					</section>
+					<section>
+						<h3>Artstyle</h3>
+						<ul>
+							<li>Isometrisch
+							<li class="fragment">Pixel-Art
+							<li class="fragment">Intensive Farben mit Bedeutung
+						</ul>
+					</section>
+					<section>
+						<h3>Gameplay</h3>
+						<ul>
+							<li>Disgaea-like Kampfsystem
+							<li class="fragment">Overworld frei begehbar
+							<li class="fragment">Choices that Matter
+						</ul>
+					</section>
+				</section>
+				<section>
+					<h4>Schwerpunkte</h4>
+					<section>
+						Fokus auf Kampfsystem als Kern
+					</section>
+					<section>
+						<ul>
+							<li class="fragment">Platzhalter als Grafiken
+							<li class="fragment">Isometrische Tilemap
+							<li class="fragment">Von Grund auf selbst
+						</ul>
+					</section>
+					<section>
+						<h3>Probleme</h3>
+						<ul>
+							<li class="fragment">StateMachine-Handling überall
+							<li class="fragment">Fehlende Trennung Logik/Presentation
+							<li class="fragment">Animationen, Timing vs. Update()-cycle
+							<li class="fragment">Pathfinding nicht trivial
+							<li class="fragment">Unity-Performance (Reload)<br><span class="fragment">Bugs (Buttonklicks)</span>
+							<li class="fragment">Persönlich: Viele Projekte
+						</ul>
+					</section>
+				</section>
+				<section>
+					<h4>Thanks!</h4>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
